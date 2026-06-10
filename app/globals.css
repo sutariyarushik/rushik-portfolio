@@ -1,26 +1,228 @@
 @import "tailwindcss";
 
+/* ─── Design tokens ──────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --accent: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.4);
+  --accent-hover: #1d4ed8;
+
+  --bg: #ffffff;
+  --bg-secondary: #f8fafc;
+  --surface: #f1f5f9;
+  --surface-2: #e2e8f0;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --border: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.15);
+
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(15, 23, 42, 0.08);
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
+
+  /* Mobile menu panel — must be fully opaque, no bleed-through */
+  --menu-bg: #ffffff;
+  --menu-border: rgba(15, 23, 42, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="dark"] {
+  --bg: #030712;
+  --bg-secondary: #0a0f1e;
+  --surface: #111827;
+  --surface-2: #1f2937;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --border: rgba(241, 245, 249, 0.06);
+  --border-strong: rgba(241, 245, 249, 0.12);
+
+  --card-bg: rgba(17, 24, 39, 0.8);
+  --card-border: rgba(241, 245, 249, 0.08);
+
+  --nav-bg: rgba(3, 7, 18, 0.85);
+
+  /* Mobile menu panel — must be fully opaque, no bleed-through */
+  --menu-bg: #0d1117;
+  --menu-border: rgba(241, 245, 249, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base ───────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* ─── Custom scrollbar ───────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* ─── Selection ──────────────────────────────────────────── */
+::selection {
+  background: rgba(37, 99, 235, 0.25);
+  color: var(--text-primary);
+}
+
+/* ─── Gradient blob background ───────────────────────────── */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+  animation: blobFloat 8s ease-in-out infinite;
+}
+.hero-blob-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #2563eb, #7c3aed);
+  top: -100px;
+  right: -200px;
+  animation-delay: 0s;
+}
+.hero-blob-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #7c3aed, #2563eb);
+  bottom: 0;
+  left: -100px;
+  animation-delay: -4s;
+}
+.hero-blob-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #059669, #2563eb);
+  top: 50%;
+  left: 50%;
+  animation-delay: -2s;
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* ─── Dot grid ───────────────────────────────────────────── */
+.dot-grid {
+  background-image: radial-gradient(
+    circle,
+    var(--text-muted) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  opacity: 0.15;
+}
+
+/* ─── Glowing accent border ──────────────────────────────── */
+.glow-border {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glow-border:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(37, 99, 235, 0.1);
+}
+
+/* ─── Glass card ─────────────────────────────────────────── */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+}
+
+/* ─── Gradient text ──────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section container ──────────────────────────────────── */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Chip hover glow ────────────────────────────────────── */
+.skill-chip {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.skill-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+/* ─── Timeline line animation ────────────────────────────── */
+.timeline-line {
+  background: linear-gradient(to bottom, var(--accent), #7c3aed);
+}
+
+/* ─── Typewriter cursor blink ────────────────────────────── */
+.type-cursor {
+  display: inline-block;
+  width: 3px;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  border-radius: 2px;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ─── MUI override: sync theme colors ───────────────────── */
+.MuiCard-root {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 16px !important;
+}
+
+/* ─── Focus visible ──────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ─── Mobile nav ─────────────────────────────────────────── */
+.mobile-nav-item {
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.mobile-nav-item:hover {
+  color: var(--accent);
+  background: rgba(37,99,235,0.08);
 }
