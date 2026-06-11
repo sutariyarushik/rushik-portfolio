@@ -244,11 +244,11 @@ export default function Navbar() {
   const menuVariants = {
     closed: {
       clipPath: 'circle(0% at calc(100% - 36px) 36px)',
-      transition: { duration: 0.55, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.55, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] },
     },
     open: {
       clipPath: 'circle(150% at calc(100% - 36px) 36px)',
-      transition: { duration: 0.65, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.65, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] },
     },
   };
 

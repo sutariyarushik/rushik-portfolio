@@ -1,10 +1,10 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { heroTypewriterStrings, heroBio } from '@/lib/data';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -13,12 +13,12 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
   },
 };
 
@@ -137,14 +137,15 @@ export default function Hero() {
               minHeight: '2.5rem',
             }}
           >
-            <TypeAnimation
-              sequence={typeSequence}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-              style={{ color: 'var(--accent)' }}
-              id="typewriter-text"
-            />
+            <span id="typewriter-text">
+              <TypeAnimation
+                sequence={typeSequence}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                style={{ color: 'var(--accent)' }}
+              />
+            </span>
           </motion.div>
 
           {/* One-liner */}

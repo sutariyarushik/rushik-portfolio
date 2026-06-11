@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Chip from '@mui/material/Chip';
 import { skillGroups } from '@/lib/data';
 import {
@@ -52,18 +52,18 @@ const categoryColors: Record<string, string> = {
   'AI Tools': '#0891B2',
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   show: { transition: { staggerChildren: 0.05 } },
 };
 
-const chipVariants = {
+const chipVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8, y: 20 },
   show: {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
   },
 };
 
