@@ -7,8 +7,7 @@ export const siteConfig = {
   role: "Software Developer",
   email: "rushiks.work@gmail.com",
   linkedin: "https://www.linkedin.com/in/rushik-sutariya",
-  github: "https://github.com/rushik-sutariya",
-  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID ?? "xyzabcde",
+  resume: "/Rushik_Sutariya_Resume.pdf",
 };
 
 export const navLinks = [
@@ -27,10 +26,10 @@ export const heroTypewriterStrings = [
 ];
 
 export const heroBio =
-  "Building fast, accessible, and modern web applications for international clients.";
+  "Software Developer with 3+ years of experience building fast, accessible, and modern web applications with React.js & Next.js.";
 
 export const aboutBio =
-  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js for international clients across the F&B, print, and SaaS industries.";
+  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across the F&B, print, and SaaS industries.";
 
 export interface Stat {
   value: string;
@@ -41,7 +40,7 @@ export const stats: Stat[] = [
   { value: "3+", label: "Years Experience" },
   { value: "7+", label: "Projects Delivered" },
   { value: "3", label: "Industries" },
-  { value: "∞", label: "International Clients" },
+  { value: "90+", label: "Lighthouse Score" },
 ];
 
 export interface SkillGroup {
@@ -71,7 +70,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "API & Integrations",
-    skills: ["REST APIs", "TanStack Query", "Axios", "Formspree", "CMS Integration"],
+    skills: ["REST APIs", "TanStack Query", "Axios", "CMS Integration", "Resend API"],
   },
   {
     category: "Tools",

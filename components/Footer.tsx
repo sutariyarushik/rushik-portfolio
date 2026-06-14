@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { siteConfig } from '@/lib/data';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { FiHeart } from 'react-icons/fi';
+import { FaLinkedin } from 'react-icons/fa';
+import { FiHeart, FiDownload } from 'react-icons/fi';
 
 export default function Footer() {
   const [year, setYear] = useState(2025);
@@ -84,11 +84,10 @@ export default function Footer() {
           </motion.a>
 
           <motion.a
-            id="footer-github"
-            href={siteConfig.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub profile"
+            id="footer-resume"
+            href={siteConfig.resume}
+            download="Rushik_Sutariya_Resume.pdf"
+            aria-label="Download Resume"
             whileHover={{ scale: 1.15, y: -2 }}
             whileTap={{ scale: 0.9 }}
             style={{
@@ -104,15 +103,15 @@ export default function Footer() {
               transition: 'color 0.2s ease, border-color 0.2s ease',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.color = 'var(--text-primary)';
-              (e.currentTarget as HTMLElement).style.borderColor = 'var(--text-primary)';
+              (e.currentTarget as HTMLElement).style.color = 'var(--accent)';
+              (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent)';
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.color = 'var(--text-secondary)';
               (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)';
             }}
           >
-            <FaGithub size={17} />
+            <FiDownload size={17} />
           </motion.a>
         </div>
 
@@ -128,7 +127,7 @@ export default function Footer() {
             justifyContent: 'center',
           }}
         >
-          Designed & built by{' '}
+          Designed &amp; built by{' '}
           <span style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
             Rushik Sutariya
           </span>

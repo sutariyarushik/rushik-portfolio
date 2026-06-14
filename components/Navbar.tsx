@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import { navLinks, siteConfig } from '@/lib/data';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+import { FaLinkedin } from 'react-icons/fa';
+import { FiMail, FiDownload } from 'react-icons/fi';
 
 // ─── Animated hamburger icon (3 bars → X) ─────
 function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
@@ -541,7 +541,7 @@ export default function Navbar() {
                           animation: 'blobFloat 2s ease-in-out infinite',
                         }}
                       />
-                      Available for work
+                      Available · Open to Roles
                     </div>
                   </div>
                 </div>
@@ -701,21 +701,24 @@ export default function Navbar() {
                       icon: <FaLinkedin size={15} />,
                       color: '#0A66C2',
                       label: 'LinkedIn',
+                      isDownload: false,
                     },
                     {
-                      id: 'mobile-menu-github',
-                      href: siteConfig.github,
-                      icon: <FaGithub size={15} />,
-                      color: 'var(--text-primary)',
-                      label: 'GitHub',
+                      id: 'mobile-menu-resume',
+                      href: siteConfig.resume,
+                      icon: <FiDownload size={15} />,
+                      color: 'var(--accent)',
+                      label: 'Resume',
+                      isDownload: true,
                     },
                   ].map((s) => (
                     <motion.a
                       key={s.id}
                       id={s.id}
                       href={s.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={s.isDownload ? undefined : '_blank'}
+                      rel={s.isDownload ? undefined : 'noopener noreferrer'}
+                      download={s.isDownload ? 'Rushik_Sutariya_Resume.pdf' : undefined}
                       aria-label={s.label}
                       whileHover={{ scale: 1.12, y: -2 }}
                       whileTap={{ scale: 0.9 }}

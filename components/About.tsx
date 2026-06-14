@@ -98,8 +98,8 @@ export default function About() {
             >
               I thrive at the intersection of design and engineering — obsessing over
               performance, accessibility, and pixel-perfect implementation. When I&apos;m
-              not shipping features, you&apos;ll find me exploring the latest in the
-              React ecosystem or contributing to open source.
+              not shipping features, you&apos;ll find me exploring new patterns in the
+              React ecosystem or optimising Core Web Vitals.
             </p>
 
             {/* Quick facts */}
@@ -108,7 +108,7 @@ export default function About() {
                 { label: '📍 Location', value: 'Ahmedabad, Gujarat, India' },
                 { label: '🏢 Company', value: 'Vivansh Infotech Pvt Ltd' },
                 { label: '📧 Email', value: 'rushiks.work@gmail.com' },
-                { label: '🌐 Focus', value: 'International Clients · Web Apps' },
+                { label: '🎯 Focus', value: 'React.js · Next.js · Web Apps' },
               ].map((fact) => (
                 <div
                   key={fact.label}

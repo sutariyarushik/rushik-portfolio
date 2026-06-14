@@ -70,11 +70,13 @@ export default function Experience() {
           }}
         >
           {/* Animated vertical line — track */}
+          {/* left: 17px centres the 2px line on the dot (dot left-edge = 48-41=7px, dot centre = 7+11=18px, line centre = 17+1=18px) */}
+          {/* top: 15px aligns the line start with the dot centre (dot top=4px, dot h=22px → centre=15px) */}
           <div
             style={{
               position: 'absolute',
-              left: '15px',
-              top: 0,
+              left: '17px',
+              top: '15px',
               bottom: 0,
               width: '2px',
               background: 'var(--border)',
@@ -85,8 +87,8 @@ export default function Experience() {
           <motion.div
             style={{
               position: 'absolute',
-              left: '15px',
-              top: 0,
+              left: '17px',
+              top: '15px',
               width: '2px',
               height: lineHeight,
               borderRadius: '2px',
@@ -114,7 +116,7 @@ export default function Experience() {
                   borderRadius: '50%',
                   background: 'var(--accent)',
                   border: '3px solid var(--bg)',
-                  boxShadow: '0 0 0 2px var(--accent)',
+                  boxShadow: '0 0 12px rgba(37,99,235,0.5)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
