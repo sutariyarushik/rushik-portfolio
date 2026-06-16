@@ -519,46 +519,7 @@ export default function Contact() {
               </motion.a>
             ))}
 
-            {/* Response badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.35 }}
-              style={{
-                padding: '16px 20px',
-                borderRadius: '14px',
-                background: 'rgba(5,150,105,0.06)',
-                border: '1px solid rgba(5,150,105,0.18)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-              }}
-            >
-              <div
-                style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: '10px',
-                  background: 'rgba(5,150,105,0.12)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '18px',
-                  flexShrink: 0,
-                }}
-              >
-                ⚡
-              </div>
-              <div>
-                <div style={{ fontSize: '13px', fontWeight: 700, color: '#059669' }}>
-                  Fast Response
-                </div>
-                <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
-                  Typically replies within 24 hours
-                </div>
-              </div>
-            </motion.div>
+
           </motion.div>
 
           {/* ─── Right: contact form ─────────────────────────── */}
