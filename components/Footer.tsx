@@ -7,7 +7,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FiHeart, FiDownload } from 'react-icons/fi';
 
 export default function Footer() {
-  const [year, setYear] = useState(2025);
+  const [year, setYear] = useState(0);
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);

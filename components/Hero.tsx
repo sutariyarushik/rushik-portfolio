@@ -46,16 +46,6 @@ export default function Hero() {
       <div className="hero-blob hero-blob-2" />
       <div className="hero-blob hero-blob-3" />
 
-      {/* Dot grid */}
-      <div
-        className="dot-grid"
-        style={{
-          position: 'absolute',
-          inset: 0,
-          pointerEvents: 'none',
-        }}
-      />
-
       {/* Radial vignette */}
       <div
         style={{

@@ -85,14 +85,14 @@ function Field({
   const borderColor = hasError
     ? '#ef4444'
     : focused
-    ? 'var(--accent)'
-    : 'var(--border-strong)';
+      ? 'var(--accent)'
+      : 'var(--border-strong)';
 
   const boxShadow = hasError
     ? '0 0 0 3px rgba(239,68,68,0.12)'
     : focused
-    ? '0 0 0 3px rgba(37,99,235,0.15)'
-    : 'none';
+      ? '0 0 0 3px rgba(37,99,235,0.15)'
+      : 'none';
 
   const sharedStyle: React.CSSProperties = {
     width: '100%',
@@ -278,6 +278,17 @@ export default function Contact() {
       external: false,
     },
     {
+      id: 'contact-phone-btn',
+      href: `tel:${siteConfig.phone?.replace(/\s/g, '')}`,
+      icon: <FiPhone size={22} />,
+      iconBg: 'rgba(5,150,105,0.12)',
+      iconColor: '#059669',
+      glowColor: 'rgba(5,150,105,0.25)',
+      label: 'Call Me',
+      value: siteConfig.phone ?? '+91 7043234063',
+      external: false,
+    },
+    {
       id: 'contact-linkedin-btn',
       href: siteConfig.linkedin,
       icon: <FaLinkedin size={22} />,
@@ -296,7 +307,7 @@ export default function Contact() {
       iconColor: '#7C3AED',
       glowColor: 'rgba(124,58,237,0.25)',
       label: 'Download Resume',
-      value: 'Rushik_Sutariya_Resume.pdf',
+      value: 'Rushik Sutariya Resume',
       external: false,
       download: 'Rushik_Sutariya_Resume.pdf',
     },
@@ -719,7 +730,7 @@ export default function Contact() {
                         id="contact-name"
                         name="name"
                         label="Your Name"
-                        placeholder="Rushik Sutariya"
+                        placeholder="John Deo"
                         icon={<FiUser size={15} />}
                         error={fieldErrors.name}
                         value={name}
@@ -730,7 +741,7 @@ export default function Contact() {
                         name="email"
                         label="Email Address"
                         type="email"
-                        placeholder="you@example.com"
+                        placeholder="johndeo@example.com"
                         icon={<FiMail size={15} />}
                         error={fieldErrors.email}
                         value={email}

@@ -194,6 +194,11 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [year, setYear] = useState(0);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -761,7 +766,7 @@ export default function Navbar() {
                     paddingTop: '4px',
                   }}
                 >
-                  © 2025 · Rushik Sutariya
+                  © {year} · Rushik Sutariya
                 </div>
               </motion.div>
             </motion.div>

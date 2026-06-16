@@ -16,10 +16,13 @@ import {
   SiAxios,
   SiHtml5,
   SiCss,
+  SiNodedotjs,
+  SiSocketdotio,
+  SiChartdotjs,
 } from 'react-icons/si';
 import { TbBrandFramerMotion } from 'react-icons/tb';
 import { MdApi } from 'react-icons/md';
-import { FiCpu, FiZap, FiCode } from 'react-icons/fi';
+import { FiCpu, FiZap, FiCode, FiBarChart2, FiFileText } from 'react-icons/fi';
 
 // Map skill names to react-icons
 const iconMap: Record<string, React.ReactNode> = {
@@ -37,19 +40,25 @@ const iconMap: Record<string, React.ReactNode> = {
   'Vercel': <SiVercel size={14} />,
   'Axios': <SiAxios size={14} />,
   'REST APIs': <MdApi size={14} />,
+  'Node.js': <SiNodedotjs size={14} />,
+  'Socket.io': <SiSocketdotio size={14} />,
+  'Chart.js': <SiChartdotjs size={14} />,
+  'Recharts': <FiBarChart2 size={14} />,
+  'PDF Generation': <FiFileText size={14} />,
+  'TanStack Query': <FiZap size={14} />,
   'GitHub Copilot': <FiCpu size={14} />,
-  'ChatGPT': <FiZap size={14} />,
-  'v0.dev': <FiCode size={14} />,
   'Cursor AI': <FiCpu size={14} />,
+  'Claude AI': <FiZap size={14} />,
 };
 
 const categoryColors: Record<string, string> = {
   Core: '#2563EB',
   Frontend: '#7C3AED',
-  Performance: '#059669',
-  'API & Integrations': '#D97706',
+  'Backend & Services': '#059669',
+  'Data & Visualisation': '#D97706',
+  Performance: '#0891B2',
   Tools: '#DC2626',
-  'AI Tools': '#0891B2',
+  'AI Tools': '#6D28D9',
 };
 
 const containerVariants: Variants = {
