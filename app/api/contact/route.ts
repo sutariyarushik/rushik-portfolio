@@ -155,84 +155,109 @@ function buildEmailHtml(
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Portfolio Message</title>
 </head>
-<body style="margin:0;padding:0;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f1f5f9;padding:40px 16px;">
+<body style="margin:0;padding:0;background-color:#f8fafc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f8fafc;padding:48px 16px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
-
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,0.03);overflow:hidden;border-collapse:separate;">
+          
           <!-- Header -->
           <tr>
-            <td style="background:linear-gradient(135deg,#2563eb,#7c3aed);border-radius:16px 16px 0 0;padding:32px 40px;">
-              <table width="100%" cellpadding="0" cellspacing="0">
+            <td style="background:linear-gradient(135deg,#1e3a8a,#4c1d95);padding:40px;border-top-left-radius:19px;border-top-right-radius:19px;text-align:left;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
-                    <div style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:rgba(255,255,255,0.2);border-radius:12px;font-weight:800;font-size:15px;color:#fff;letter-spacing:-0.5px;margin-bottom:16px;">RS</div>
-                    <h1 style="margin:0;font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.5px;">New Portfolio Message</h1>
-                    <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,0.75);">Received ${now} IST</p>
+                    <div style="display:inline-block;padding:6px 12px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:8px;font-weight:700;font-size:13px;color:#ffffff;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;">
+                      Portfolio Inquiry
+                    </div>
+                    <h1 style="margin:0;font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;line-height:1.2;">
+                      You received a new message
+                    </h1>
+                    <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,0.7);font-weight:500;">
+                      Received ${now} IST
+                    </p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- Body -->
+          <!-- Body Content -->
           <tr>
-            <td style="background:#ffffff;padding:32px 40px;">
-
-              <!-- Details table -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+            <td style="padding:40px;background-color:#ffffff;">
+              
+              <!-- Contact Details Grid -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-bottom:28px;">
                 <tr>
-                  <td style="padding:14px 0;border-bottom:1px solid #f1f5f9;vertical-align:top;width:90px;">
-                    <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#94a3b8;">Name</span>
+                  <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;width:100px;vertical-align:top;">
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;">Sender</span>
                   </td>
-                  <td style="padding:14px 0 14px 16px;border-bottom:1px solid #f1f5f9;">
-                    <span style="font-size:15px;font-weight:700;color:#0f172a;">${name}</span>
+                  <td style="padding:12px 0 12px 16px;border-bottom:1px solid #f1f5f9;vertical-align:top;">
+                    <strong style="font-size:15px;color:#0f172a;">${name}</strong>
+                    <div style="margin-top:2px;">
+                      <a href="mailto:${email}" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:500;">${email}</a>
+                    </div>
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding:14px 0;border-bottom:1px solid #f1f5f9;vertical-align:top;">
-                    <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#94a3b8;">Email</span>
+                  <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;vertical-align:top;">
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;">Subject</span>
                   </td>
-                  <td style="padding:14px 0 14px 16px;border-bottom:1px solid #f1f5f9;">
-                    <a href="mailto:${email}" style="font-size:15px;color:#2563eb;text-decoration:none;font-weight:600;">${email}</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:14px 0;border-bottom:1px solid #f1f5f9;vertical-align:top;">
-                    <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#94a3b8;">Subject</span>
-                  </td>
-                  <td style="padding:14px 0 14px 16px;border-bottom:1px solid #f1f5f9;">
-                    <span style="font-size:15px;color:#0f172a;font-weight:600;">${subject}</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:14px 0;vertical-align:top;">
-                    <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#94a3b8;">Message</span>
-                  </td>
-                  <td style="padding:14px 0 14px 16px;">
-                    <p style="font-size:15px;color:#334155;line-height:1.7;margin:0;white-space:pre-wrap;">${message}</p>
+                  <td style="padding:12px 0 12px 16px;border-bottom:1px solid #f1f5f9;vertical-align:top;">
+                    <span style="font-size:15px;color:#334155;font-weight:600;">${subject}</span>
                   </td>
                 </tr>
               </table>
 
-              <!-- CTA -->
-              <div style="margin-top:28px;text-align:center;">
-                <a href="mailto:${email}?subject=Re: ${subject}" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:-0.2px;">
-                  Reply to ${name} →
-                </a>
+              <!-- Message Block -->
+              <div style="margin-top:20px;margin-bottom:32px;">
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-bottom:8px;">
+                  Message Content
+                </div>
+                <div style="background-color:#f8fafc;border-left:4px solid #2563eb;border-radius:4px;padding:20px;margin:0;">
+                  <p style="font-size:15px;color:#334155;line-height:1.6;margin:0;white-space:pre-wrap;font-style:normal;">${message}</p>
+                </div>
               </div>
+
+              <!-- Bulletproof Table-Based CTA Button -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;margin-bottom:12px;">
+                <tr>
+                  <td align="center">
+                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                      <tr>
+                        <td align="center" style="background-color:#2563eb;border-radius:12px;">
+                          <a href="mailto:${email}?subject=Re: ${subject}" target="_blank" style="display:inline-block;padding:14px 36px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;border-radius:12px;letter-spacing:-0.2px;">
+                            Reply to ${name} &rarr;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="background:#f8fafc;border-radius:0 0 16px 16px;padding:20px 40px;text-align:center;border-top:1px solid #e2e8f0;">
-              <p style="margin:0;font-size:12px;color:#94a3b8;">
-                ${stored ? '✅ Stored in database' : '⚠️ DB storage unavailable'} · 
-                Rushik Sutariya Portfolio · rushiks.work@gmail.com
-              </p>
+            <td style="background-color:#f8fafc;border-top:1px solid #e2e8f0;padding:24px 40px;border-bottom-left-radius:19px;border-bottom-right-radius:19px;text-align:center;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center">
+                    <div style="display:inline-flex;align-items:center;padding:6px 12px;background-color:${stored ? 'rgba(34,197,94,0.08)' : 'rgba(234,179,8,0.08)'};border-radius:20px;margin-bottom:12px;">
+                      <span style="font-size:12px;font-weight:600;color:${stored ? '#16a34a' : '#ca8a04'};">
+                        ${stored ? '✓ Stored in Postgres Database' : '⚠ Database storage bypassed'}
+                      </span>
+                    </div>
+                    <p style="margin:0;font-size:12px;color:#94a3b8;font-weight:500;">
+                      Rushik Sutariya Portfolio &bull; <a href="mailto:rushiks.work@gmail.com" style="color:#94a3b8;text-decoration:none;">rushiks.work@gmail.com</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
