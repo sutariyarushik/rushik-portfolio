@@ -64,7 +64,7 @@ export default function Hero() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
             gap: '60px',
             alignItems: 'center',
-            padding: '120px 0 80px',
+            padding: 'var(--hero-padding)',
           }}
         >
           {/* Left — text content */}
@@ -279,13 +279,7 @@ export default function Hero() {
               alignItems: 'center',
             }}
           >
-            <div
-              style={{
-                position: 'relative',
-                width: 'min(340px, 90vw)',
-                height: 'min(340px, 90vw)',
-              }}
-            >
+            <div className="profile-container">
               {/* Glow ring */}
               <div
                 style={{

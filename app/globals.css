@@ -31,6 +31,11 @@
   /* Mobile menu panel — must be fully opaque, no bleed-through */
   --menu-bg: #ffffff;
   --menu-border: rgba(15, 23, 42, 0.1);
+
+  /* Responsive spacing variables */
+  --section-padding: 100px 0;
+  --section-header-margin: 60px;
+  --hero-padding: 120px 0 80px;
 }
 
 [data-theme="dark"] {
@@ -58,6 +63,47 @@
   --menu-bg: #0d1117;
   --menu-border: rgba(241, 245, 249, 0.08);
 }
+
+/* ─── Responsive spacing overrides ───────────────────────── */
+@media (max-width: 991px) {
+  :root {
+    --section-padding: 75px 0;
+    --section-header-margin: 48px;
+    --hero-padding: 100px 0 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --section-padding: 50px 0;
+    --section-header-margin: 36px;
+    --hero-padding: 80px 0 40px;
+  }
+}
+
+/* ─── Profile photo container ────────────────────────────── */
+.profile-container {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  max-width: 80vw;
+  max-height: 80vw;
+}
+
+@media (max-width: 991px) {
+  .profile-container {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-container {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 
 /* ─── Base ───────────────────────────────────────────────── */
 *,

@@ -303,7 +303,7 @@ export default function Projects() {
     <section
       id="projects"
       style={{
-        padding: '100px 0',
+        padding: 'var(--section-padding)',
         background: 'var(--bg-secondary)',
         borderTop: '1px solid var(--border)',
         borderBottom: '1px solid var(--border)',
@@ -316,7 +316,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ marginBottom: '52px', textAlign: 'center' }}
+          style={{ marginBottom: 'var(--section-header-margin)', textAlign: 'center' }}
         >
           <p
             style={{

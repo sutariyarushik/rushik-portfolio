@@ -133,7 +133,7 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      style={{ padding: '100px 0', background: 'var(--bg)', borderTop: '1px solid var(--border)' }}
+      style={{ padding: 'var(--section-padding)', background: 'var(--bg)', borderTop: '1px solid var(--border)' }}
     >
       <div className="section-container">
         {/* Header */}
@@ -142,7 +142,7 @@ export default function Blog() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ marginBottom: '60px' }}
+          style={{ marginBottom: 'var(--section-header-margin)' }}
         >
           <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '8px' }}>
             Blog

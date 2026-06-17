@@ -127,7 +127,7 @@ export default function About() {
     <section
       id="about"
       style={{
-        padding: '100px 0',
+        padding: 'var(--section-padding)',
         background: 'var(--bg-secondary)',
         borderTop: '1px solid var(--border)',
         borderBottom: '1px solid var(--border)',
@@ -140,7 +140,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ marginBottom: '60px' }}
+          style={{ marginBottom: 'var(--section-header-margin)' }}
         >
           <p
             style={{

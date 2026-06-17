@@ -75,12 +75,14 @@ function MobileNavItem({
   index,
   onClick,
   isActive,
+  isLast,
 }: {
   label: string;
   href: string;
   index: number;
   onClick: () => void;
   isActive: boolean;
+  isLast?: boolean;
 }) {
   return (
     <motion.div
@@ -108,7 +110,7 @@ function MobileNavItem({
           border: 'none',
           cursor: 'pointer',
           padding: '16px 0',
-          borderBottom: '1px solid var(--border)',
+          borderBottom: isLast ? 'none' : '1px solid var(--border)',
           position: 'relative',
           overflow: 'hidden',
           textAlign: 'left',
@@ -608,6 +610,7 @@ export default function Navbar() {
                       index={i}
                       onClick={() => handleNavClick(link.href)}
                       isActive={activeSection === link.href.replace('#', '')}
+                      isLast={i === navLinks.length - 1}
                     />
                   ))}
                 </div>

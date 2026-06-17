@@ -22,7 +22,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      style={{ padding: '100px 0', background: 'var(--bg)' }}
+      style={{ padding: 'var(--section-padding)', background: 'var(--bg)' }}
     >
       <div className="section-container">
         {/* Header */}
@@ -31,7 +31,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ marginBottom: '60px' }}
+          style={{ marginBottom: 'var(--section-header-margin)' }}
         >
           <p
             style={{
