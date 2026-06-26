@@ -95,17 +95,10 @@ export default function Hero() {
                   color: '#059669',
                 }}
               >
-                <span
-                  style={{
-                    width: '7px',
-                    height: '7px',
-                    borderRadius: '50%',
-                    background: '#059669',
-                    boxShadow: '0 0 6px #059669',
-                    display: 'inline-block',
-                    animation: 'blobFloat 2s ease-in-out infinite',
-                  }}
-                />
+                <span className="status-dot">
+                  <span className="status-dot-ring" />
+                  <span className="status-dot-inner" />
+                </span>
                 Open to Opportunities
               </span>
             </motion.div>

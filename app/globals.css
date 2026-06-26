@@ -223,6 +223,42 @@ body {
   }
 }
 
+/* ─── Status dot ping (availability badge) ──────────────── */
+.status-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.status-dot-inner {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #059669;
+  box-shadow: 0 0 6px #059669;
+}
+
+.status-dot-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #059669;
+  animation: statusPing 1.8s ease-out infinite;
+}
+
+@keyframes statusPing {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
 @keyframes profileRingRotate {
   from {
     transform: rotate(0deg);

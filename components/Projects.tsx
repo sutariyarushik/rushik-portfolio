@@ -318,7 +318,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           style={{ marginBottom: 'var(--section-header-margin)', textAlign: 'center' }}
         >
-          <p
+          {/* <p
             style={{
               fontSize: '13px',
               fontWeight: 600,
@@ -329,7 +329,7 @@ export default function Projects() {
             }}
           >
             Portfolio
-          </p>
+          </p> */}
           <h2
             style={{
               fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
