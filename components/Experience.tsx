@@ -22,6 +22,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
+      aria-label="Experience"
       style={{ padding: 'var(--section-padding)', background: 'var(--bg)' }}
     >
       <div className="section-container">

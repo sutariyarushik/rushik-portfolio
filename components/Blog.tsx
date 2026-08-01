@@ -133,6 +133,7 @@ export default function Blog() {
   return (
     <section
       id="blog"
+      aria-label="Blog"
       style={{ padding: 'var(--section-padding)', background: 'var(--bg)', borderTop: '1px solid var(--border)' }}
     >
       <div className="section-container">

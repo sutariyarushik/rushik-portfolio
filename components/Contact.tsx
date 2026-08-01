@@ -316,6 +316,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      aria-label="Contact"
       style={{
         padding: 'var(--section-padding)',
         background: 'var(--bg-secondary)',

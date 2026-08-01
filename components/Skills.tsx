@@ -80,6 +80,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
+      aria-label="Skills"
       style={{ padding: 'var(--section-padding)', background: 'var(--bg)' }}
     >
       <div className="section-container">

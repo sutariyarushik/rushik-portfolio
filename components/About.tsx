@@ -126,6 +126,7 @@ export default function About() {
   return (
     <section
       id="about"
+      aria-label="About"
       style={{
         padding: 'var(--section-padding)',
         background: 'var(--bg-secondary)',

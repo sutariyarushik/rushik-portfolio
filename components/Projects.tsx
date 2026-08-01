@@ -302,6 +302,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
+      aria-label="Projects"
       style={{
         padding: 'var(--section-padding)',
         background: 'var(--bg-secondary)',
