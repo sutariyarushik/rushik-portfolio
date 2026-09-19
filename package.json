@@ -16,7 +16,7 @@
     "@neondatabase/serverless": "^1.1.0",
     "@vercel/global-config": "^1.5.1",
     "framer-motion": "^12.40.0",
-    "next": "16.2.9",
+    "next": "16.3.5",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -29,7 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.9",
+    "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
