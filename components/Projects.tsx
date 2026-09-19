@@ -353,7 +353,7 @@ export default function Projects() {
             }}
           >
             A selection of real-world projects shipped for international
-            clients — from enterprise platforms to SaaS products.
+            clients - from enterprise platforms to SaaS products.
           </p>
         </motion.div>
 

@@ -35,6 +35,10 @@ There is no test suite/runner configured in this repo.
 - **SEO/metadata surface**: `app/layout.tsx` (metadata + viewport export), `components/StructuredData.tsx` (JSON-LD), `app/opengraph-image.tsx` / `app/twitter-image.tsx` (generated OG images), `app/sitemap.ts`, `app/robots.ts`. Keep these in sync with `lib/data.ts`/`siteConfig` when changing name, role, or URLs.
 - **Not yet implemented**: `.env.local.example` documents `GEMINI_API_KEY`/`INIT_SECRET` and an `/api/chat` RAG chatbot plus `scripts/ingest.py`, but `app/api/chat/init/` and `scripts/` are currently empty — this is aspirational/in-progress, not working code.
 
+## Writing user-facing copy
+
+Keep all user-facing text plain and minimal — no cutesy jokes, no parenthetical hedges like "(probably)", no "behind the scenes" filler, no forced whimsy. This is an obvious AI-writing tell and reads badly on a portfolio site. Write the shortest normal sentence a person would actually say. Example: `lib/maintenance.ts`'s maintenance-mode page says "Making a few updates to the site right now." — not "I'm currently rearranging a few pixels behind the scenes. Nothing's broken (probably) — just a quick tune-up." Apply this to any copy you write or edit: error/empty states, toasts, emails, alt text, `lib/data.ts` content, etc.
+
 ## Environment variables
 
 Copy `.env.local.example` to `.env.local`. All variables are optional for local dev — the app degrades gracefully without them (see Contact flow above). Documented vars: `DATABASE_URL` (Neon), `RESEND_API_KEY` + `OWNER_EMAIL` (contact form), plus the not-yet-wired-up `GEMINI_API_KEY`/`INIT_SECRET` for the planned chat feature.

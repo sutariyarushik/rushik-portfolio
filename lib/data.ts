@@ -31,7 +31,7 @@ export const heroBio =
   "Software Developer with 3+ years of experience building fast, accessible, and modern web applications with React.js & Next.js.";
 
 export const aboutBio =
-  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across enterprise, SaaS, and business-management platforms — delivering pixel-perfect UIs and scalable architectures.";
+  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across enterprise, SaaS, and business-management platforms - delivering pixel-perfect UIs and scalable architectures.";
 
 export interface Stat {
   value: string;
@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     title: "Enterprise Workforce Training & Compliance Platform",
     description:
-      "An enterprise-grade workforce training and compliance platform to track certifications, training schedules, and compliance reporting for global organisations — built with real-time chat and collaborative features.",
+      "An enterprise-grade workforce training and compliance platform to track certifications, training schedules, and compliance reporting for global organisations - built with real-time chat and collaborative features.",
     highlights: [
       "Real-time in-app chat built with Socket.io + Node.js server",
       "Certification tracking with expiry alerts",
@@ -129,7 +129,7 @@ export const projects: Project[] = [
   {
     title: "B2B Order Management & Workflow Automation Platform",
     description:
-      "A comprehensive SaaS dashboard for managing orders, jobs, and clients across multiple business units — streamlining end-to-end order workflows with a modern, data-rich interface.",
+      "A comprehensive SaaS dashboard for managing orders, jobs, and clients across multiple business units - streamlining end-to-end order workflows with a modern, data-rich interface.",
     highlights: [
       "Multi-location order & job management with real-time status tracking",
       "Client portal with order history, invoicing, and approval workflows",
@@ -171,7 +171,7 @@ export const experience: ExperienceItem[] = [
     bullets: [
       "Built and maintained 7+ production-grade web applications using React.js and Next.js for international clients across enterprise, SaaS, and business-management platforms.",
       "Developed a large-scale Performance Assessment Platform with multi-step dynamic forms, conditional logic, and interactive charting dashboards in Next.js & TypeScript.",
-      "Contributed to a Node.js microservice for PDF report generation — designed for async processing and scalability to handle large datasets efficiently.",
+      "Contributed to a Node.js microservice for PDF report generation - designed for async processing and scalability to handle large datasets efficiently.",
       "Implemented real-time in-app chat using Socket.io with a Node.js server, enabling seamless team collaboration across global organisations.",
       "Architected CMS-driven frontends with dynamic routing, SSR, and optimised data-fetching using TanStack Query and REST APIs.",
       "Delivered pixel-perfect, fully responsive UIs from Figma designs achieving 90+ Lighthouse performance scores across all client projects.",
@@ -194,7 +194,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Building Scalable PDF Report Generation with a Node.js Microservice",
     excerpt:
-      "How we architected an async Node.js microservice to generate high-quality, data-rich PDF reports from dynamic assessment data — handling large datasets without blocking the main application.",
+      "How we architected an async Node.js microservice to generate high-quality, data-rich PDF reports from dynamic assessment data - handling large datasets without blocking the main application.",
     category: "Architecture",
     readTime: "6 min read",
     date: "May 2026",
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Dynamic Multi-Step Assessment Forms in Next.js: Conditional Logic at Scale",
     excerpt:
-      "A deep dive into building configurable, multi-step form workflows with conditional field logic, reusable components, and complex validation — lessons learned from a real enterprise project.",
+      "A deep dive into building configurable, multi-step form workflows with conditional field logic, reusable components, and complex validation - lessons learned from a real enterprise project.",
     category: "Frontend",
     readTime: "8 min read",
     date: "April 2026",
@@ -214,7 +214,7 @@ export const blogPosts: BlogPost[] = [
   {
     title: "Real-Time Chat in React with Socket.io: From Setup to Production",
     excerpt:
-      "A practical guide to integrating Socket.io into a React/Next.js app with a Node.js server — covering rooms, events, reconnection strategies, and the gotchas we hit in production.",
+      "A practical guide to integrating Socket.io into a React/Next.js app with a Node.js server - covering rooms, events, reconnection strategies, and the gotchas we hit in production.",
     category: "Real-Time",
     readTime: "7 min read",
     date: "March 2026",

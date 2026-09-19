@@ -307,7 +307,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/my_profile.webp"
+                  src="/my_profile.png"
                   alt="Rushik Sutariya — Software Developer"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'top center' }}
@@ -317,50 +317,20 @@ export default function Hero() {
 
               {/* Experience badge */}
               <motion.div
+                className="hero-badge hero-badge-exp"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                style={{
-                  position: 'absolute',
-                  bottom: '10px',
-                  right: '-20px',
-                  background: 'var(--accent)',
-                  color: '#fff',
-                  borderRadius: '12px',
-                  padding: '10px 16px',
-                  fontSize: '13px',
-                  fontWeight: 700,
-                  boxShadow: '0 8px 30px rgba(37,99,235,0.4)',
-                  zIndex: 3,
-                  whiteSpace: 'nowrap',
-                }}
               >
                 3+ Years Exp
               </motion.div>
 
               {/* React/Next badge */}
               <motion.div
+                className="hero-badge hero-badge-tech"
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                style={{
-                  position: 'absolute',
-                  top: '20px',
-                  left: '-24px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  backdropFilter: 'blur(12px)',
-                  borderRadius: '12px',
-                  padding: '10px 14px',
-                  fontSize: '12px',
-                  fontWeight: 600,
-                  color: 'var(--text-primary)',
-                  boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                  zIndex: 3,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                }}
               >
-                <span style={{ fontSize: '16px' }}>⚛️</span>
+                <span className="hero-badge-icon">⚛️</span>
                 React & Next.js
               </motion.div>
             </div>

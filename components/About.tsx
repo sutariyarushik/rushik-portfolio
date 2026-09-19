@@ -204,7 +204,7 @@ export default function About() {
                 marginBottom: '32px',
               }}
             >
-              I thrive at the intersection of design and engineering — obsessing over
+              I thrive at the intersection of design and engineering - obsessing over
               performance, accessibility, and pixel-perfect implementation. When I&apos;m
               not shipping features, you&apos;ll find me exploring new patterns in the
               React ecosystem or optimising Core Web Vitals.
