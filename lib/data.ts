@@ -31,7 +31,7 @@ export const heroBio =
   "Software Developer with 3+ years of experience building fast, accessible, and modern web applications with React.js & Next.js.";
 
 export const aboutBio =
-  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across the F&B, print, SaaS, and assessment industries — delivering pixel-perfect UIs and scalable architectures.";
+  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across enterprise, SaaS, and business-management platforms — delivering pixel-perfect UIs and scalable architectures.";
 
 export interface Stat {
   value: string;
@@ -113,11 +113,11 @@ export const projects: Project[] = [
     accentColor: "#F59E0B",
   },
   {
-    title: "SafetyTrack",
+    title: "Safety & Training Management Platform",
     description:
       "An enterprise-grade Safety & Training Management Platform to track compliance, certifications, and training schedules for global organisations — built with real-time chat and collaborative features.",
     highlights: [
-      "Real-time in-app chat built with Socket.io (Skote) + Node.js server",
+      "Real-time in-app chat built with Socket.io + Node.js server",
       "Safety compliance tracking with certification expiry alerts",
       "Training schedule management with automated notifications",
       "Role-based access control for multi-organisation environments",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     accentColor: "#059669",
   },
   {
-    title: "PrintFlow360",
+    title: "Print Operations SaaS Dashboard",
     description:
       "A comprehensive SaaS dashboard for managing print jobs, orders, and clients across multiple fulfilment centres — streamlining end-to-end print business operations with a modern, data-rich interface.",
     highlights: [
@@ -141,9 +141,9 @@ export const projects: Project[] = [
     accentColor: "#7C3AED",
   },
   {
-    title: "Dip'n'Dip",
+    title: "International Café Chain Website & CMS",
     description:
-      "A fully responsive marketing website and custom CMS-driven admin panel for Dip'n'Dip — an international café chain operating across multiple countries, requiring multilingual content and dynamic menu management.",
+      "A fully responsive marketing website and custom CMS-driven admin panel for an international café chain operating across multiple countries, requiring multilingual content and dynamic menu management.",
     highlights: [
       "Custom admin panel with CMS-driven content management",
       "Dynamic menu & location pages with server-side rendering",
@@ -172,7 +172,7 @@ export const experience: ExperienceItem[] = [
       "Built and maintained 7+ production-grade web applications using React.js and Next.js for international clients across F&B, print, SaaS, and assessment industries.",
       "Developed a large-scale Performance Assessment Platform with multi-step dynamic forms, conditional logic, and interactive charting dashboards in Next.js & TypeScript.",
       "Contributed to a Node.js microservice for PDF report generation — designed for async processing and scalability to handle large datasets efficiently.",
-      "Implemented real-time in-app chat in SafetyTrack using Socket.io (Skote) with a Node.js server, enabling seamless team collaboration across global organisations.",
+      "Implemented real-time in-app chat in a safety & training management platform using Socket.io with a Node.js server, enabling seamless team collaboration across global organisations.",
       "Architected CMS-driven frontends with dynamic routing, SSR, and optimised data-fetching using TanStack Query and REST APIs.",
       "Delivered pixel-perfect, fully responsive UIs from Figma designs achieving 90+ Lighthouse performance scores across all client projects.",
       "Collaborated with cross-functional teams across time zones, managing Git workflows and deploying to Vercel via CI/CD pipelines.",
