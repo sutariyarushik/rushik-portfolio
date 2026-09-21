@@ -28,10 +28,10 @@ export const heroTypewriterStrings = [
 ];
 
 export const heroBio =
-  "Software Developer with 3+ years of experience building fast, accessible, and modern web applications with React.js & Next.js.";
+  "Software Developer with 4 years of experience building fast, accessible, and modern web applications with React.js & Next.js.";
 
 export const aboutBio =
-  "Software Developer with 3+ years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across enterprise, SaaS, and business-management platforms - delivering pixel-perfect UIs and scalable architectures.";
+  "Software Developer with 4 years of experience at Vivansh Infotech Pvt Ltd, Ahmedabad. I specialise in building dynamic, CMS-driven web applications with React.js and Next.js across enterprise, SaaS, and business-management platforms - delivering pixel-perfect UIs and scalable architectures.";
 
 export interface Stat {
   value: string;
@@ -39,7 +39,7 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { value: "3+", label: "Years Experience" },
+  { value: "4", label: "Years Experience" },
   { value: "7+", label: "Projects Delivered" },
   { value: "5+", label: "Tech Stacks Mastered" },
   { value: "90+", label: "Lighthouse Score" },
@@ -167,7 +167,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Software Developer",
     company: "Vivansh Infotech Pvt Ltd",
-    period: "January 2023 – Present",
+    period: "Sep 2022 – Present",
     bullets: [
       "Built and maintained 7+ production-grade web applications using React.js and Next.js for international clients across enterprise, SaaS, and business-management platforms.",
       "Developed a large-scale Performance Assessment Platform with multi-step dynamic forms, conditional logic, and interactive charting dashboards in Next.js & TypeScript.",

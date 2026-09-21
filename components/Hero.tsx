@@ -321,7 +321,7 @@ export default function Hero() {
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               >
-                3+ Years Exp
+                4 Years Exp
               </motion.div>
 
               {/* React/Next badge */}

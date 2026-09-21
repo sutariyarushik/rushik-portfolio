@@ -48,7 +48,7 @@ const websiteSchema = {
   name: 'Rushik Sutariya Portfolio',
   url: BASE_URL,
   description:
-    'Portfolio of Rushik Sutariya, a Frontend Developer with 3+ years of experience building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
+    'Portfolio of Rushik Sutariya, a Frontend Developer with 4 years of experience building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
 };
 
 export default function StructuredData() {

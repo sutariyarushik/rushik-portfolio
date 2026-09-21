@@ -210,7 +210,7 @@ export default async function Image() {
                 fontWeight: 500,
               }}
             >
-              3+ Years Experience
+              4 Years Experience
             </span>
           </div>
         </div>

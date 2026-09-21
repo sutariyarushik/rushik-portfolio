@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Rushik Sutariya is a Frontend Developer with 3+ years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
+    'Rushik Sutariya is a Frontend Developer with 4 years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
 
   keywords: [
     'Rushik Sutariya',
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title:
       'Rushik Sutariya | Senior Frontend Developer — React, Next.js & TypeScript',
     description:
-      'Rushik Sutariya is a Frontend Developer with 3+ years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
+      'Rushik Sutariya is a Frontend Developer with 4 years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
     siteName: 'Rushik Sutariya Portfolio',
     locale: 'en_US',
     images: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     title:
       'Rushik Sutariya | Senior Frontend Developer — React, Next.js & TypeScript',
     description:
-      'Rushik Sutariya is a Frontend Developer with 3+ years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
+      'Rushik Sutariya is a Frontend Developer with 4 years building production apps in React, Next.js, TypeScript & AI-powered interfaces. Based in Ahmedabad, India.',
     images: ['/opengraph-image'],
   },
 
